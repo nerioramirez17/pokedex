@@ -3,6 +3,11 @@ import styled from "styled-components";
 export const Container = styled.div`
   display: flex;
   height: 100vh;
+  
+  @media (max-width: 1024px) {
+    flex-direction: column;
+    height: auto;
+  }
 `;
 
 export const TitleContainer = styled.div`
@@ -18,11 +23,19 @@ export const DetailSection = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  @media (max-width: 1024px) {
+    padding: 10px;
+  }
 `;
 
 export const PokemonImage = styled.img`
   width: 250px; 
   height: 250px;
+
+  @media (max-width: 1024px) {
+    width: 150px;
+    height: 150px;
+  }
 `;
 
 export const AddButton = styled.button`
@@ -35,10 +48,6 @@ export const AddButton = styled.button`
   cursor: pointer;
 `;
 
-export const TitleDetail = styled.p`
-  font-size: 30px;
-  font-weight: bold;
-`;
 
 export const NamePokemon = styled.p`
   font-size: 30px;
@@ -61,14 +70,23 @@ export const DetailContainer = styled.div`
   border-radius: 8px;
   padding-left: 52px;
   padding-right: 52px;
-`;
 
+  
+  @media (max-width: 1024px) {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+`;
 
 export const TypesContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
   margin: 10px 0;
+  @media (max-width: 1024px) {
+    justify-content: center;
+  }
 `;
 
 export const LabelHeight =  styled.p`

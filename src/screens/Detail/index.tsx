@@ -8,9 +8,7 @@ import {
   Container,
   DetailSection,
   PokemonImage,
-  TitleDetail,
   NamePokemon,
-  TitleContainer,
   DetailContainer,
   TypesContainer,
   TypeBadge,
@@ -53,9 +51,7 @@ const Detail: React.FC = () => {
         <DetailSection>
           <BackButton onClick={handleBackClick}>← Volver</BackButton>
           <DetailContainer>
-            <TitleContainer></TitleContainer>
             <PokemonImage src={image} alt={name} />
-            <TitleDetail>Detalles del Pokémon</TitleDetail>
             <NamePokemon>
               {name.charAt(0).toUpperCase() + name.slice(1)}
             </NamePokemon>
