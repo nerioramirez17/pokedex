@@ -66,7 +66,7 @@ const Home: React.FC = () => {
     <Container>
       <PokemonSection>
         <SearchBox
-          placeholder="Que pokemon buscas..."
+          placeholder="Buscar Pokemon"
           onChange={(e) => setSearchTerm(e.target.value)}
         />
         {isLoading ? (
